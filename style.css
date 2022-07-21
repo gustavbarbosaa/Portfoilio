@@ -158,7 +158,7 @@ footer{
   transform: translate(-50%);
 }
 
-@media(max-width: 875px) {
+@media(max-width: 975px) {
 
   body{
     overflow-x: hidden;
