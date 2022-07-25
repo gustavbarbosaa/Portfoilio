@@ -90,10 +90,11 @@ body{
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
+    height: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 @media(max-width: 550px) {
@@ -105,9 +106,15 @@ footer{
     .cabecalho nav{
         display: flex;
         justify-content: space-around;
+        margin: 0.4rem;
+    }
+
+    .principal{
+        margin-top: 0;
     }
 
     footer{
-        display: none;
+        height: 2rem;
+        margin-top: 0;
     }
 }
