@@ -163,6 +163,56 @@ article{
   color: var(--text-color);
 }
 
+.projetos-postados{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  cursor: pointer;
+}
+
+.card-projetos{
+  width: 26rem;
+  height: 11rem;
+  margin: 0.5rem 0;
+  border-radius: 20px;
+  background-color: var(--bg-cards);
+}
+
+.conteudo-card-projeto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.text-folder{
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.git{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.dados{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.linguagens{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.linguagens img{
+  height: 25px;
+}
 
 footer{
   position: absolute;
@@ -186,6 +236,17 @@ footer{
   main{
     display: flex;
     flex-direction: column;
+  }
+
+  .projetos-postados{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    cursor: pointer;
+  }
+
+  .card-projetos{
+    width: 100%;
   }
 
   footer{
