@@ -100,11 +100,14 @@ footer{
     .cabecalho{
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
     }
 
     .cabecalho nav{
         display: flex;
         justify-content: space-around;
+    }
+
+    footer{
+        display: none;
     }
 }
