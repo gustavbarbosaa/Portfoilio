@@ -23,12 +23,43 @@ function preencherContainer(dados){
 
     const git = document.createElement('div');
     git.classList.add('git');
+
     const linguagens = document.createElement('div');
     linguagens.classList.add('linguagens');
-    const smallGit= document.createElement('small');
-    smallGit.textContent = `${dados.language}`;
 
+    const smallGit = document.createElement('small');
+    if(dados.language === null) {
+        smallGit.textContent = ``;
+    } else {
+        smallGit.textContent = `${dados.language}`;
+    }
     linguagens.insertAdjacentElement('beforeend', smallGit);
+
+    const divForks = document.createElement('div');
+    divForks.classList.add('dados');
+
+    const imgGit = document.createElement('img');
+    imgGit.src = 'assets/images/git-branch.svg';
+    divForks.insertAdjacentElement('afterbegin', imgGit);
+
+    const pGit = document.createElement('p');
+    pGit.textContent = `${dados.forks_count}`;
+    divForks.insertAdjacentElement('beforeend',pGit);
+
+    const divStars = document.createElement('div');
+    divStars.classList.add('dados');
+
+    const imgGitStar = document.createElement('img');
+    imgGitStar.src = 'assets/images/Vector.svg';
+    divStars.insertAdjacentElement('afterbegin', imgGitStar);
+
+    const pGitStar = document.createElement('p');
+    pGitStar.textContent = `${dados.stargazers_count}`;
+    divStars.insertAdjacentElement('beforeend', pGitStar);
+    
+    
+    git.insertAdjacentElement('afterbegin', divForks);
+    git.insertAdjacentElement('beforeend', divStars);
     git.insertAdjacentElement('beforeend', linguagens);
 
     const a = document.createElement('a');
