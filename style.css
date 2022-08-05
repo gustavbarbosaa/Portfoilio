@@ -172,7 +172,6 @@ article{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  cursor: pointer;
 }
 
 .card-projetos{
@@ -186,6 +185,7 @@ article{
   overflow: hidden;
   background-color: var(--bg-cards);
   transition: ease-in-out .3s;
+  cursor: pointer;
 }
 
 .card-projetos:hover{
@@ -240,7 +240,6 @@ footer{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    cursor: pointer;
   }
 
   .card-projetos{
@@ -269,7 +268,6 @@ footer{
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    cursor: pointer;
   }
 
   .card-projetos{
