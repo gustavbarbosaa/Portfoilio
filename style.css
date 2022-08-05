@@ -97,6 +97,10 @@ aside{
   list-style: none;
 }
 
+a{
+  color: var(--text-color);
+}
+
 .contato ul li a{
   display: flex;
   align-items: center;
@@ -165,20 +169,27 @@ article{
 
 .projetos-postados{
   width: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   cursor: pointer;
 }
 
 .card-projetos{
   display: flex;
   align-items: center;
-  width: 26rem;
-  height: 13rem;
+  justify-content: space-between;
+  width: 23rem;
+  height: 12rem;
   margin: 0.5rem 0;
   border-radius: 20px;
   overflow: hidden;
   background-color: var(--bg-cards);
+  transition: ease-in-out .3s;
+}
+
+.card-projetos:hover{
+  transform: scale(1.1);
 }
 
 .conteudo-card-projeto{
@@ -222,6 +233,19 @@ footer{
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+}
+
+@media(max-width: 1260px) {
+  .projetos-postados{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    cursor: pointer;
+  }
+
+  .card-projetos{
+    width: 100%;
+  }
 }
 
 @media(max-width: 975px) {
