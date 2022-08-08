@@ -190,6 +190,7 @@ article{
 
 .card-projetos:hover{
   transform: scale(1.1);
+  box-shadow: 0 0 10px var(--bg-cards), 0 0 20px var(--bg-cards);
 }
 
 .conteudo-card-projeto{
